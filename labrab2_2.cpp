@@ -50,7 +50,7 @@ list* takeElem(list*& first, int &idx, bool print = false)
 	string answer;
 	cin >> answer;
 	value = stoi(answer);
-	if (value == 0) {
+	if (value == 1) {
 		cout << "Введите значение: ";
 		cin >> answer;
 		value = stoi(answer);
@@ -62,7 +62,7 @@ list* takeElem(list*& first, int &idx, bool print = false)
 			idx_search = idx_search->next;
 		}
 	}
-	else if (value == 1) {
+	else if (value == 2) {
 		cout << "Введите индекс: ";
 		cin >> answer;
 		idx = stoi(answer);
